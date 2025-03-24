@@ -1,0 +1,75 @@
+/* index.css - Page d’accueil moderne et attrayante */
+
+header {
+    background: url('../images/banner.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 42px;
+    font-weight: bold;
+    border-bottom: 5px solid #00b894;
+}
+
+/* --- Forcer le titre en vert --- */
+header h1 {
+    color: #00b894 !important;
+}
+
+/* --- Menu de navigation --- */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    color: white;
+    background: #00b894;
+    transform: scale(1.1);
+}
+
+/* --- Bannière d’accueil --- */
+.banner {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to right, #00b894, #00cec9);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    header {
+        font-size: 32px;
+        padding: 80px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner {
+        padding: 60px;
+        font-size: 24px;
+    }
+}

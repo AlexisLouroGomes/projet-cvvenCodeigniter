@@ -1,0 +1,47 @@
+/* reservation.css - Formulaire de réservation moderne et élégant */
+.reservation-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+/* --- Formulaire --- */
+.reservation-container input,
+.reservation-container select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.reservation-container input:focus,
+.reservation-container select:focus {
+    border-color: #00b894;
+}
+
+/* --- Bouton du formulaire --- */
+.reservation-container button {
+    width: 100%;
+    background: #00b894;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.reservation-container button:hover {
+    background: #009688;
+}

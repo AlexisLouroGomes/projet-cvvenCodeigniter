@@ -1,0 +1,82 @@
+/* logements.css - Page des logements avec cartes modernes et alignement horizontal */
+
+.logements-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: stretch;
+    border: 2px solid #ddd;
+    border-radius: 16px;
+    background: #f9f9f9;
+}
+
+/* --- Carte de logement --- */
+.logement {
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.logement:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Image du logement --- */
+.logement img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 2px solid #00b894;
+}
+
+/* --- Texte du logement --- */
+.logement h2 {
+    font-size: 22px;
+    color: #333;
+    margin: 15px 0 8px;
+}
+
+.logement p {
+    color: #555;
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 0 0 15px;
+}
+
+/* --- Prix du logement --- */
+.prix {
+    font-weight: bold;
+    color: #00b894;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .logement {
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logement {
+        width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logement {
+        width: 100%;
+    }
+}

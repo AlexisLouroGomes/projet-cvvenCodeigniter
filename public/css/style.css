@@ -1,0 +1,100 @@
+/* style.css - Design global moderne avec bannières et cadres élégants */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header global avec bannière --- */
+header {
+    background: linear-gradient(to right, #00b894, #00cec9);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 5px solid #009688;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Couleur spécifique pour le titre */
+header h1 {
+    color: #00b894;
+}
+
+/* --- Boutons globaux --- */
+button {
+    background: linear-gradient(to right, #00b894, #00cec9);
+    color: white;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #009688, #008080);
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Sections encadrées --- */
+section {
+    background: white;
+    border-radius: 16px;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 1200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    overflow: hidden;
+}
+
+/* --- Formulaires globaux --- */
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #00cec9;
+    box-shadow: 0 0 8px rgba(0, 206, 201, 0.5);
+}
+
+/* --- Lien stylisé --- */
+a {
+    color: #00b894;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #009688;
+    text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    header {
+        font-size: 32px;
+        padding: 60px 20px;
+    }
+    section {
+        padding: 30px;
+    }
+}
