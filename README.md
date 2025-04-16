@@ -1,13 +1,85 @@
-# Projet CVVEN – Installation
+# Projet CVVEN – Installation avec Docker 🐳
 
-### Base de données :
+## ⚙️ Prérequis
+- Docker Desktop installé et lancé
+- PHP installé localement (pour exécuter `php spark serve`)
+- Terminal (CMD, PowerShell ou VSCode)
+
+---
+
+## 🧱 Installation et démarrage du projet
+
+1. **Cloner le projet**
+```bash
+git clone https://github.com/ton-utilisateur/projet-cvvenCodeigniter.git
+cd projet-cvvenCodeigniter
+```
+
+2. **Renommer le fichier `.env`**
+```bash
+cp env .env
+```
+
+3. **Lancer les services Docker (MariaDB + phpMyAdmin)**
+```bash
+docker-compose up -d
+```
+
+4. **Démarrer le serveur local CodeIgniter**
+```bash
+php spark serve
+```
+
+---
+
+## 🔗 Accès à l'application
+
+- Application : [http://localhost:8080](http://localhost:8080)
+- phpMyAdmin : [http://localhost:8081](http://localhost:8081)
+  - Serveur : `db`
+  - Utilisateur : `user`
+  - Mot de passe : `user`
+
+---
+
+## 💾 Base de données
+
 - Nom : `cvven`
-- Importer le fichier `database/schema.sql` dans phpMyAdmin ou via MySQL CLI
+- Importation :
+  1. Ouvrir phpMyAdmin
+  2. Se connecter avec les identifiants ci-dessus
+  3. Sélectionner la base `cvven`
+  4. Importer le fichier `database/schema.sql` fourni
 
-### Accès admin :
+---
+
+## 🔐 Accès administrateur
+
 - Email : `admin@cvven.com`
 - Mot de passe : `admin123`
 
+---
+
+## 🛑 Arrêter le projet
+
+1. **Arrêter le serveur PHP**
+```bash
+Ctrl + C
+```
+
+2. **Arrêter les conteneurs Docker**
+```bash
+docker-compose down
+```
+
+---
+
+## 🧽 Réinitialiser la base de données (optionnel)
+```bash
+docker volume rm projet-cvvencodeigniter_db_data
+```
+
+---
 
 # CodeIgniter 4 Framework
 
